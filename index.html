@@ -14,7 +14,7 @@
             <nav>
                 <ul>
                     <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#about-me">About Me</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
@@ -24,47 +24,65 @@
 
     <section id="home">
         <div class ="container">
-            <h2>Hi</h2>
-            <p>papa</p>
+            <h2>Hi, I'm Christian Ernest</h2>
+            <p>Web Developer | Mobile Developer | Database </p>
         </div>
     </section>
 
-    <section id="about">
-        <h2>Proyek Saya</h2>
-            <div class="slider-container">
-                <!-- Proyek 1 -->
-                <div class="slide active">
-                    <h3><a href="https://chrisnestt.github.io/Hotel/" target="_blank">Proyek 1</a></h3>
-                    <p>Deskripsi singkat proyek 1 yang telah dikerjakan. Anda bisa melihat kode sumber <a href="https://chrisnestt.github.io/Hotel/" target="_blank">di sini</a>.</p>
-                </div>
-                <!-- Proyek 2 -->
-                <div class="slide">
-                    <h3><a href="https://github.com/username/project2" target="_blank">Proyek 2</a></h3>
-                    <p>Deskripsi singkat proyek 2 yang telah dikerjakan. Anda bisa melihat kode sumber <a href="https://github.com/username/project2" target="_blank">di sini</a>.</p>
-                </div>
-                <!-- Proyek 3 -->
-                <div class="slide">
-                    <h3><a href="https://github.com/username/project3" target="_blank">Proyek 3</a></h3>
-                    <p>Deskripsi singkat proyek 3 yang telah dikerjakan. Anda bisa melihat kode sumber <a href="https://github.com/username/project3" target="_blank">di sini</a>.</p>
-                </div>
+    <section id="about-me">
+        <h2>Tentang Saya</h2>
+        <div class="about-container">
+            <img src="myimage.jpg" alt="Foto Profil" class="profile-image">
+            <div class="about-text">
+                <p>I am a student in Bina Nusantara university majoring in computer science. I specialize in web and mobile development with experience in building modern, responsive web and mobile applications using React, JavaScript, CSS frameworks, and Java.</p>
             </div>
-            <button class="prev" onclick="changeSlide(-1)">&#10094; Sebelumnya</button>
-            <button class="next" onclick="changeSlide(1)">Selanjutnya &#10095;</button>
-        </section>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>My Project</h2>
+        <div class="slider-container">
+            <!-- Proyek 1 -->
+            <div class="slide active">
+                <img src="hotel.jpg" alt="Gambar Proyek 1" class="project-image">
+                <h3><a href="https://chrisnestt.github.io/Hotel/" target="_blank">VHOTEL</a></h3>
+                <p>This is a web project for hotel design that I created using HTML, CSS and JS script and is also responsive if you want to reduce the size and open it on a cellphone.<a href="https://chrisnestt.github.io/Hotel/" target="_blank">View Here</a>.</p>
+            </div>
+            <!-- Proyek 2 -->
+            <div class="slide">
+                <img src="images/project2.jpg" alt="Gambar Proyek 2" class="project-image">
+                <h3><a href="https://github.com/username/project2" target="_blank">Proyek 2</a></h3>
+                <p>Proyek ini menggunakan Node.js dan Express untuk backend. Lihat lebih lanjut <a href="https://github.com/username/project2" target="_blank">di sini</a>.</p>
+            </div>
+            <!-- Proyek 3 -->
+            <div class="slide">
+                <img src="images/project3.jpg" alt="Gambar Proyek 3" class="project-image">
+                <h3><a href="https://github.com/username/project3" target="_blank">Proyek 3</a></h3>
+                <p>Proyek ini adalah aplikasi mobile berbasis Flutter. Lihat kode sumbernya <a href="https://github.com/username/project3" target="_blank">di sini</a>.</p>
+            </div>
+        </div>
+    
+        <!-- Indikator slide -->
+        <div class="slider-indicators">
+            <span class="dot" onclick="currentSlide(0)"></span> 
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+        </div>
+    </section>
+    
+    
+    <section id="contact">
+        <h2>Kontak Saya</h2>
+        <div class="contact-container">
+            <div class="contact-box">
+                <p><strong>Email:</strong> <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+                <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/username" target="_blank">linkedin.com/in/username</a></p>
+                <p><strong>GitHub:</strong> <a href="https://github.com/username" target="_blank">github.com/username</a></p>
+            </div>
+        </div>
+    </section>
     
 
-    <section id="contact">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <form>
-                <label for="name">Name:</label>
-
-                <label for="email">Email:</label>
-
-                <label for="message">Message:</label>
-            </form>
-        </div>
-    </section>
 
     <footer>
         <div class="container">

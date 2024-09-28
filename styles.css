@@ -50,7 +50,7 @@ section h2 {
     margin-bottom: 20px;
 }
 
-.project {
+.about {
     margin-bottom: 20px;
 }
 
@@ -59,8 +59,46 @@ form {
     flex-direction: column;
 }
 
+p {
+    text-align: center; 
+}
 
-/* Gaya untuk slider */
+
+/* Bagian About Me */
+#about-me {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9; 
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;     
+    align-items: center;        
+    max-width: 600px;
+    margin: 0 auto;            
+}
+
+/* Gambar profil bulat */
+.profile-image {
+    width: 150px;               
+    height: 150px;              
+    border-radius: 50%;         
+    object-fit: cover;          
+    margin-bottom: 20px;        
+    border: 4px solid #ddd;     
+}
+
+/* Teks tentang saya */
+.about-text p {
+    font-size: 18px;           
+    line-height: 1.6;          
+    color: #333;                
+    margin: 0;
+    padding: 0 20px;            
+}
+
+/* Kontainer slide */
 .slider-container {
     position: relative;
     width: 100%;
@@ -69,62 +107,132 @@ form {
     overflow: hidden;
 }
 
+/* Slide individual */
 .slide {
-    display: none;
-    padding: 20px;
-    box-sizing: border-box;
-    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    height: 400px;
+    display: none; 
+}
+
+/* Gambar proyek */
+.project-image {
+    width: 80%;
+    height: auto;
+    margin-bottom: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.active {
-    display: block;
-    animation: fade 1s ease-in-out;
+/* Teks judul dan deskripsi */
+.slide h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
 }
 
-@keyframes fade {
-    from { opacity: 0; }
-    to { opacity: 1; }
+.slide p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
 }
 
-/* Tombol navigasi */
-.prev, .next {
+/* Indikator slide */
+.slider-indicators {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.dot {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
     cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.dot.active {
+    background-color: #717171;
+}
+
+/* CSS Responsif untuk Ponsel */
+@media only screen and (max-width: 768px) {
+    .slide p {
+        padding: 0 20px; 
+    }
+
+    .slide h3 {
+        padding: 0 20px; 
+    }
+
+    .project-image {
+        width: 90%; 
+    }
+}
+
+/* Bagian Kontak */
+#contact {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9; 
+}
+
+/* Kontainer kontak */
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+
+.contact-box {
+    background-color: white;     
+    padding: 30px;
+    border-radius: 10px;        
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    width: 100%;
+    max-width: 600px;
+}
+
+
+.contact-box p {
     font-size: 18px;
-    background-color: rgba(0, 0, 0, 0.5);
-    border: none;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    -webkit-user-select: none;
+    margin-bottom: 15px;
 }
 
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
+
+.contact-box a {
+    color: #007BFF;               
+    text-decoration: none;         
+    transition: color 0.3s;        
 }
 
-.prev {
-    left: 0;
+.contact-box a:hover {
+    color: #0056b3;               
 }
 
-.prev:hover, .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
+@media (max-width: 768px) {
+    .contact-box {
+        padding: 20px;
+        width: 90%; 
+    }
 
+    .contact-box p {
+        font-size: 
+    }
+}
 
 
 footer {
-    background: #333;
-    color: white;
+    background-color: #333;
+    color: #fff;
     text-align: center;
-    padding: 10px 0;
+    padding: 10px 0;
 }
 
